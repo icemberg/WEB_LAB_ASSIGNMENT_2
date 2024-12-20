@@ -1,8 +1,8 @@
 <?php
 // Database connection settings
-$servername = "localhost";
-$username = "root";
-$password = "";
+$servername = "sql210.infinityfree.com";
+$username = "if0_37956392";
+$password = "QXMV45Pu0mNH8f";
 $dbname = "registration_db";
 
 // Create a connection
