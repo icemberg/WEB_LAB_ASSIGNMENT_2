@@ -3,7 +3,7 @@
 $servername = "sql210.infinityfree.com";
 $username = "if0_37956392";
 $password = "QXMV45Pu0mNH8f";
-$dbname = "registration_db";
+$dbname = "if0_37956392_registration_db";
 
 // Create a connection
 $conn = new mysqli($servername, $username, $password, $dbname);
