@@ -5,16 +5,15 @@ $username = "if0_37956392";
 $password = "QXMV45Pu0mNH8f";
 $dbname = "if0_37956392_registration_db";
 
-// Create a connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-} else {
-  echo "Connected successfully";
+try {
+    // Create a new PDO instance
+    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
+    // Set the PDO error mode to exception
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+    echo "Connected successfully";
+} catch (PDOException $e) {
+    echo "Connection failed: " . $e->getMessage();
 }
-
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
