@@ -17,7 +17,7 @@ try {
 
 // Handle form submission
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    $fullName = htmlspecialchars($_POST['fullName']);
+    $fullName = htmlspecialchars($_POST['full_name']);
     $email = htmlspecialchars($_POST['email']);
     $address = htmlspecialchars($_POST['address']);
 
