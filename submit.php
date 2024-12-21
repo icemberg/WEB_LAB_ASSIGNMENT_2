@@ -1,9 +1,9 @@
 <?php
 // Database connection settings
-$servername = "sql210.infinityfree.com";
-$username = "if0_37956392";
-$password = "QXMV45Pu0mNH8f";
-$dbname = "if0_37956392_registration_db";
+$servername = "sql12.freemysqlhosting.net";
+$username = "sql12753342";
+$password = "dmPhWMtPwB";
+$dbname = "sql12753342";
 
 try {
     // Create a new PDO instance
